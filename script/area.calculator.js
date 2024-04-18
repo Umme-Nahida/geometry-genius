@@ -37,3 +37,12 @@ function calculateRactangle(){
     ractangleElement.innerText = ractangleArea;
 
 }
+
+
+// reuaseble function to reduce dublicate code 
+function getInputValue(fildId){
+    const fieldElement = document.getElementById(fildId);
+    const inputValueText = fieldElement.value;
+    const inputValue = parseFloat(inputValueText);
+    return inputValue;
+}
