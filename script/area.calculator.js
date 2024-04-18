@@ -17,3 +17,22 @@ function calculateTriangle(){
     triangleArea.innerText = area;
 
 }
+
+// Ractangle area
+function calculateRactangle(){
+    // get input value from width field
+    const widthField = document.getElementById("ractangle-width");
+    const widthFieldValueString = widthField.value;
+    const widthFieldValue = parseFloat(widthFieldValueString);
+
+    // get input value from length field
+    const lengthField = document.getElementById("ractangle-length");
+    const lengthFieldValue = lengthField.value;
+    const length = parseFloat(lengthFieldValue);
+
+    const ractangleArea = widthFieldValue * length;
+
+    // set value to the ractangle area 
+    
+
+}
