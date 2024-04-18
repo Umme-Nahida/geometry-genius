@@ -38,11 +38,23 @@ function calculateRactangle(){
 
 }
 
-
+function parallelogramCalculate(){
+    const paralleloBase = getInputValue("parallelo-base");
+    const paralleloHeight = getInputValue("parallelo-height");
+    const area = paralleloBase * paralleloHeight;
+    // set parallelogram inner text or value
+    setElementValueById("parallelogram-area",area);
+}
 // reuaseble function to reduce dublicate code 
 function getInputValue(fildId){
     const fieldElement = document.getElementById(fildId);
     const inputValueText = fieldElement.value;
     const inputValue = parseFloat(inputValueText);
+    fieldElement.value ="";
     return inputValue;
+}
+
+function setElementValueById(inputId,newValue){
+    const inputArea = document.getElementById(inputId);
+    inputArea.innerText = newValue;
 }
