@@ -33,6 +33,7 @@ function calculateRactangle(){
     const ractangleArea = widthFieldValue * length;
 
     // set value to the ractangle area 
-    
+    const ractangleElement = document.getElementById("ractangle-area");
+    ractangleElement.innerText = ractangleArea;
 
 }
