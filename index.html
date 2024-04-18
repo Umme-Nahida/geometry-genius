@@ -14,8 +14,9 @@
    <main>
     <!-- container -->
     <div class="flex flex-col">
-        <div class="gird grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <!-- shape container -->
+            <!-- div num 1 -->
             <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
@@ -29,6 +30,27 @@
                     <input type="text" class="text-lg w-24 border px-2 pl-3 bg-slate-200" placeholder="height" name="" id="triangle-height">
                     <span class="pl-1">cm</span>
                   </p>
+                  <p>Area: <span id="triangle-area">0</span>cm<sup>2</sup> </p>
+                  <div class="card-actions w-full ">
+                    <button onclick="calculateTriangle()" class="btn btn-primary w-full text-xl">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <!-- div num 2 -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Triagle</h2>
+                  <p>Area (A)= 0.5 X b X h </p>
+                  <p>
+                    <input type="text" class="text-lg w-24 border px-2 bg-slate-200" placeholder="base" name="" id="triangle-base">
+                    <span class="pl-1">cm</span>
+                    <input type="text" class="text-lg w-24 border px-2 pl-3 bg-slate-200" placeholder="height" name="" id="triangle-height">
+                    <span class="pl-1">cm</span>
+                  </p>
+                  <p>Area: <span id="triangle-area">0</span>cm<sup>2</sup> </p>
                   <div class="card-actions w-full ">
                     <button onclick="calculateTriangle()" class="btn btn-primary w-full text-xl">Calculate</button>
                   </div>
