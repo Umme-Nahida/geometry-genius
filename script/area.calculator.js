@@ -59,7 +59,9 @@ function RhombusCalculate(){
 // ------------pentagon area calculate
 function PentagonCalculate(){
     const p = getInputValue("pentagon-p");
-    
+    const b = getInputValue("pentagon-b");
+
+   
 }
 
 // // ------------ellepse area calculation
