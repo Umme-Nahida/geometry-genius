@@ -68,7 +68,8 @@ function PentagonCalculate(){
 
 // // ------------ellepse area calculation
 function ellipseCalculate(){
-   
+    const a = getInputValue("ellipse-a");
+    
 }
 // reuaseble function to reduce dublicate code 
 function getInputValue(fildId){
