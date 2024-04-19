@@ -49,7 +49,9 @@ function parallelogramCalculate(){
 // ------------rhombus area calculate
 function RhombusCalculate(){
     const diagonalD1 = getInputValue("diagonal-d1");
-   
+    const diagonalD2 = getInputValue("diagonal-d2");
+
+    
 }
 
 // ------------pentagon area calculate
