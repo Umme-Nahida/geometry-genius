@@ -50,7 +50,8 @@ function parallelogramCalculate(){
 function RhombusCalculate(){
     const diagonalD1 = getInputValue("diagonal-d1");
     const diagonalD2 = getInputValue("diagonal-d2");
-
+    const area = 0.5 * diagonalD1 * diagonalD2;
+  
     
 }
 
