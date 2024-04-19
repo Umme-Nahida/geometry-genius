@@ -9,12 +9,20 @@
 </head>
 <body>
     <header>
+      <section class=" flex items-center justify-between px-10 py-5 bg-[#1090D8] bg-opacity-10">
+           <div>
+            <h1 class="text-2xl font-bold">Interactive </h1>
+            <h4 class="xl font-medium">
+              Geometry Genius</h4>
+           </div>
+           <button class="btn btn-primary">Blog</button>
 
+      </section>
     </header>
    <main>
     <!-- container -->
-    <div class="flex flex-1 px-5">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="flex flex-1 mx-3 my-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <!-- shape container -->
             <!-- div num 1 -->
             <div class="card bg-base-100 shadow-xl">
@@ -39,7 +47,7 @@
             <!-- div num 2 ractangle -->
             <div class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                  <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">Rectangle</h2>
@@ -59,7 +67,7 @@
             <!-- div num 3 parallel -->
             <div class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                  <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">Parallelogram</h2>
@@ -75,12 +83,54 @@
                     <button onclick="parallelogramCalculate()" class="btn btn-primary w-full text-xl">Calculate</button>
                   </div>
                 </div>
-              </div>
+            </div>
+            <!-- div num rhobus -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rhombus</h2>
+                  <p>Area (A)= 0.5 X d1 X d2</p>
+                  <p>
+                    <input type="text" class="text-lg w-24 border px-2 bg-slate-200" placeholder="d1" name="" id="diagonal-d1">
+                    <span class="pl-1">cm</span>
+                    <input type="text" class="text-lg w-24 border px-2 pl-3 bg-slate-200" placeholder="d2" name="" id="diagonal-d2">
+                    <span class="pl-1">cm</span>
+                  </p>
+                  <p>Area: <span id="Rhombus-area">0</span>cm</p>
+                  <div class="card-actions w-full ">
+                    <button onclick="RhombusCalculate()" class="btn btn-primary w-full text-xl">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- div num pentagon -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Pentagon</h2>
+                  <p>Area (A)= 0.5 X p X b</p>
+                  <p>
+                    <input type="text" class="text-lg w-24 border px-2 bg-slate-200" placeholder="p" name="" id="pentagon-p">
+                    <span class="pl-1">cm</span>
+                    <input type="text" class="text-lg w-24 border px-2 pl-3 bg-slate-200" placeholder="b" name="" id="pentagon-b">
+                    <span class="pl-1">cm</span>
+                  </p>
+                  <p>Area: <span id="Pentagon-area">0</span>cm</p>
+                  <div class="card-actions w-full ">
+                    <button onclick="PentagonCalculate()" class="btn btn-primary w-full text-xl">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- div num ellepse -->
+           
 
         </div>
         <!-- area calculations -->
-        <div class="w-[200px] pl-2">
-          <h1>Area Calculations</h1>
+        <div class="w-[300px] h-[400px] pl-2 border ml-5 text-center">
+          <h1 class="underline">Area Calculations</h1>
         </div>
     </div>
     
