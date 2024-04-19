@@ -57,14 +57,9 @@ function RhombusCalculate(){
 }
 
 // ------------pentagon area calculate
-// function PentagonCalculate(){
-//     const p = getInputValue("pentagon-p");
-//     const b = getInputValue("pentagon-b");
-
-//     const area = 0.5 * p * b;
-//     const areaToDecimal = area.toFixed(2);
-//     setElementValueById("Pentagon-area", areaToDecimal);
-// }
+function PentagonCalculate(){
+   
+}
 
 // // ------------ellepse area calculation
 // function ellipseCalculate(){
