@@ -70,7 +70,8 @@ function PentagonCalculate(){
 function ellipseCalculate(){
     const a = getInputValue("ellipse-a");
     const b = getInputValue("ellipse-b");
-    
+    const area = 3.14 * a * b;
+   
 }
 // reuaseble function to reduce dublicate code 
 function getInputValue(fildId){
