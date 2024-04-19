@@ -53,7 +53,7 @@ function RhombusCalculate(){
     const area = 0.5 * diagonalD1 * diagonalD2;
     const areaToDecimal = area.toFixed(2)
 
-    
+    setElementValueById("Rhombus-area",areaToDecimal);
 }
 
 // ------------pentagon area calculate
