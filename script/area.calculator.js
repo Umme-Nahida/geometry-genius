@@ -71,7 +71,7 @@ function ellipseCalculate(){
     const a = getInputValue("ellipse-a");
     const b = getInputValue("ellipse-b");
     const area = 3.14 * a * b;
-   
+    const areaToDecimal = area.toFixed(2);
 }
 // reuaseble function to reduce dublicate code 
 function getInputValue(fildId){
