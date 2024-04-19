@@ -62,6 +62,8 @@ function PentagonCalculate(){
     const b = getInputValue("pentagon-b");
 
     const area = 0.5 * p * b;
+    const areaToDecimal = area.toFixed(2);
+    setElementValueById("Pentagon-area", areaToDecimal);
 }
 
 // // ------------ellepse area calculation
