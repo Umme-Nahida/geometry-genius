@@ -49,32 +49,27 @@ function parallelogramCalculate(){
 // ------------rhombus area calculate
 function RhombusCalculate(){
     const diagonalD1 = getInputValue("diagonal-d1");
-    const diagonalD2 = getInputValue("diagonal-d2");
-
-    const area = 0.5 * diagonalD1 * diagonalD2;
-    const areaToDecimal = area.toFixed(2)
-
-    setElementValueById("Rhombus-area",areaToDecimal);
+   
 }
 
 // ------------pentagon area calculate
-function PentagonCalculate(){
-    const p = getInputValue("pentagon-p");
-    const b = getInputValue("pentagon-b");
+// function PentagonCalculate(){
+//     const p = getInputValue("pentagon-p");
+//     const b = getInputValue("pentagon-b");
 
-    const area = 0.5 * p * b;
-    const areaToDecimal = area.toFixed(2);
-    setElementValueById("Pentagon-area", areaToDecimal);
-}
+//     const area = 0.5 * p * b;
+//     const areaToDecimal = area.toFixed(2);
+//     setElementValueById("Pentagon-area", areaToDecimal);
+// }
 
-// ------------ellepse area calculation
-function ellipseCalculate(){
-    const a = getInputValue("ellipse-a");
-    const b = getInputValue("ellipse-b");
-    const area = 3.14 * a * b;
-    const areaToDecimal = area.toFixed(2);
-    setElementValueById("ellipse-area", areaToDecimal);
-}
+// // ------------ellepse area calculation
+// function ellipseCalculate(){
+//     const a = getInputValue("ellipse-a");
+//     const b = getInputValue("ellipse-b");
+//     const area = 3.14 * a * b;
+//     const areaToDecimal = area.toFixed(2);
+//     setElementValueById("ellipse-area", areaToDecimal);
+// }
 // reuaseble function to reduce dublicate code 
 function getInputValue(fildId){
     const fieldElement = document.getElementById(fildId);
