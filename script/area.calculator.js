@@ -61,7 +61,7 @@ function PentagonCalculate(){
     const p = getInputValue("pentagon-p");
     const b = getInputValue("pentagon-b");
 
-   
+    const area = 0.5 * p * b;
 }
 
 // // ------------ellepse area calculation
