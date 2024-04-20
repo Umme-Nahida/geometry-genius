@@ -14,8 +14,8 @@ function calculateTriangle(){
     console.log(area)
     // get triangle area
     const triangleArea = document.getElementById("triangle-area");
-    triangleArea.innerText = area;
-
+    triangleArea.innerText = area; 
+    addToCalculationEntry("TrianleArea",area);
 }
 
 // Ractangle area
@@ -35,6 +35,7 @@ function calculateRactangle(){
     // set value to the ractangle area 
     const ractangleElement = document.getElementById("ractangle-area");
     ractangleElement.innerText = ractangleArea;
+    addToCalculationEntry("Ractangle",ractangleArea);
 
 }
 
@@ -44,6 +45,7 @@ function parallelogramCalculate(){
     const area = paralleloBase * paralleloHeight;
     // set parallelogram inner text or value
     setElementValueById("parallelogram-area",area);
+    addToCalculationEntry("parallelogram",area);
 }
 
 // ------------rhombus area calculate
@@ -54,6 +56,7 @@ function RhombusCalculate(){
     const areaToDecimal = area.toFixed(2)
 
     setElementValueById("Rhombus-area",areaToDecimal);
+    addToCalculationEntry("Rhombus",areaToDecimal);
 }
 
 // ------------pentagon area calculate
@@ -64,6 +67,7 @@ function PentagonCalculate(){
     const area = 0.5 * p * b;
     const areaToDecimal = area.toFixed(2);
     setElementValueById("Pentagon-area", areaToDecimal);
+    addToCalculationEntry("Pentagon", areaToDecimal);
 }
 
 // // ------------ellepse area calculation
@@ -73,6 +77,7 @@ function ellipseCalculate(){
     const area = 3.14 * a * b;
     const areaToDecimal = area.toFixed(2);
     setElementValueById("ellipse-area", areaToDecimal);
+    addToCalculationEntry("Ellepse",areaToDecimal)
 
 }
 // reuaseble function to reduce dublicate code 
@@ -87,4 +92,16 @@ function getInputValue(fildId){
 function setElementValueById(inputId,newValue){
     const inputArea = document.getElementById(inputId);
     inputArea.innerText = newValue;
+}
+
+function addToCalculationEntry(areaType,area){
+    console.log(areaType + " " + area);
+    const addEntryElement =document.getElementById("calculationEntry");
+    const count = addEntryElement.childElementCount;
+    console.log(count);
+    const p = document.createElement("p");
+    p.classList.add("my-2");
+    p.innerHTML = ` ${count + 1}. ${areaType}  ${area}<span>cm<sup>2</sup></span>  <button class="btn btn-primary btn-sm">Convert to m<sup>2</sup></button> `;
+    addEntryElement.appendChild(p);
+
 }
